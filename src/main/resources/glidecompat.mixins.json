@@ -6,8 +6,7 @@
   "priority": 500,
   "mixins": [],
   "client": [
-    "LocalPlayerGlideCompatMixin",
-    "LocalPlayerJumpGlideMixin"
+    "LocalPlayerGlideCompatMixin"
   ],
   "injectors": {
     "defaultRequire": 0

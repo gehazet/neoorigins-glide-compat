@@ -12,15 +12,8 @@ player has the NeoOrigins `natural_glide` capability.
 - Requires NeoOrigins. Does not modify NeoOrigins or Clockwork.
 - License: MIT
 
-## Versions
-- 1.0.0: Clockwork / NeoOrigins natural glide fix
-- 1.1.0: jump mid-air always starts gliding even with Create Jetpack's "Active Elytra" keybind set
-- 1.2.0: the jump fix only applies to NeoOrigins natural gliders (Human + elytra keeps default behaviour)
-
 ## Build
 `./build.sh` (needs JDK 21). Output: `build/glidecompat-<version>-neoforge-1.21.1.jar`
 
-
-CurseForge: https://www.curseforge.com/minecraft/mc-mods (project ID 1788351)
-
-License: MIT
+The `stubs` folder only contains tiny empty placeholder classes with the right names so `javac`
+can compile the mixin. The real classes come from Minecraft / NeoForge / NeoOrigins at runtime.

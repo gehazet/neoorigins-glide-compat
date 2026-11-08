@@ -4,13 +4,12 @@ license = "MIT"
 
 [[mods]]
 modId = "glidecompat"
-version = "1.2.0"
+version = "1.0.0"
 displayName = "NeoOrigins Glide Compat"
 authors = "gehazet"
 description = '''
-Fixes gliding when other mods interfere. 1) NeoOrigins natural glide (Elytrian, Phantom...) works
-again when Clockwork is installed. 2) For natural-glide origins, pressing jump mid-air always starts gliding, even if Create
-Jetpack's "Active Elytra" keybind is set (that key keeps working too). Client-side only.
+Fixes NeoOrigins natural gliding (Elytrian, Phantom, Hiveling, Windwalker...) when another mod
+(e.g. Clockwork) also redirects ItemStack#canElytraFly on the client. Client-side only.
 '''
 
 [[mixins]]
