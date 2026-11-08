@@ -1,0 +1,1 @@
+package net.minecraft.client.player; public class Input { public boolean jumping; }

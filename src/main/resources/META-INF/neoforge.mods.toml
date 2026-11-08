@@ -1,0 +1,38 @@
+modLoader = "lowcodefml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "glidecompat"
+version = "1.2.0"
+displayName = "NeoOrigins Glide Compat"
+authors = "gehazet"
+description = '''
+Fixes gliding when other mods interfere. 1) NeoOrigins natural glide (Elytrian, Phantom...) works
+again when Clockwork is installed. 2) For natural-glide origins, pressing jump mid-air always starts gliding, even if Create
+Jetpack's "Active Elytra" keybind is set (that key keeps working too). Client-side only.
+'''
+
+[[mixins]]
+config = "glidecompat.mixins.json"
+
+[[dependencies.glidecompat]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.glidecompat]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.glidecompat]]
+modId = "neoorigins"
+type = "required"
+versionRange = "[2.0,)"
+ordering = "AFTER"
+side = "CLIENT"
